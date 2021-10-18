@@ -2,7 +2,7 @@ package com.bridgelabz.moodanalyser;
 
 public class MoodAnalyser {
 
-	public static String message;
+	public String message;
 
 	// Constructor
 	public MoodAnalyser(String message) {
