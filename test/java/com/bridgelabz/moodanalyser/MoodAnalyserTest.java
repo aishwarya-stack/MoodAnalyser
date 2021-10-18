@@ -8,8 +8,10 @@ public class MoodAnalyserTest {
 // Test case to analyze sad mood of the user
 
 	@Test
-    public void shouldAnswerWithTrue() {
-        Assert.assertTrue(true);
+	public void givenMessageWhenProperShouldReturnSad() {
+        MoodAnalyser moodanalyser = new MoodAnalyser("I am in Sad Mood");
+        String actualResult = moodanalyser.analyseMood();
+        Assert.assertEquals("Sad", actualResult);
     }
 	
 }
